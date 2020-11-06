@@ -256,7 +256,7 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
     ```
     
 ### run_unit_test
-- Please cd to the dir of test_LRU_Cache.py and run below command:
+- Please `cd` to the `dir` of test_LRU_Cache.py and run below command:
 
     `pytest test_LRU_Cache.py`
     
