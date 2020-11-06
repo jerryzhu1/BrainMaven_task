@@ -12,7 +12,7 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
 - [Installation](#installation)
     - [python](#python)
     - [pytest](#pytest)
-- [package_introduction](#LRU_Cache)
+- [package_introduction](#package_introduction)
     - [Methods&Assumptions](#Methods&Assumptions)
         - [init](#init)
         - [put](#put)
@@ -34,16 +34,18 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
         - [test_get_LRU_Cache_base](#test_get_LRU_Cache_base)
         - [test_get_LRU_Cache_remove_last_recent_used](#test_get_LRU_Cache_remove_last_recent_used)
     - [test_delete](#test_delete)
+        - [test_delete_LRU_Cache_remove_key](#test_delete_LRU_Cache_remove_key)
     - [test_reset](#test_reset)
+        - [test_reset_LRU_Cache](#test_reset_LRU_Cache)
 - [run_unit_test](#run_unit_test)
     
 ## installation
 ### python
-- This packaged is developed and tested under python 3.8.5 env, and anaconda env 3.8.
+- This packaged is developed and tested under python 3.7.3 env, and anaconda env 3.7.
 
 - Although not been tested, it should be safe to run with any version >= 3.6.
 
-- Please download and install pure [**python**](https://www.python.org/downloads/release/python-385/) or [**anaconda**](https://www.anaconda.com/products/individual) if you don't have python installed with version >= 3.6.
+- Please download and install pure [**python**](https://www.python.org/downloads/release/python-373/) or [**anaconda**](https://www.anaconda.com/products/individual) if you don't have python installed with version >= 3.6.
 
 ### pytest
 
@@ -184,7 +186,7 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
 ### test_get
 #### test_get_LRU_Cache_base
 - Test get method will return corresponding value if key exist in cache, and -1 if not.
-    '''
+    ```
     LRU_Obj = LRU_Cache(3)
     assert LRU_Obj.size == 3
 
@@ -195,7 +197,7 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
     assert LRU_Obj.cache == OrderedDict([('Toronto', 'ON'), ('Washington', 'DC'), ('Shanghai', 'SH')])
     assert LRU_Obj.get('Toronto') == 'ON'
     assert LRU_Obj.get('Mars') == -1
-    '''
+    ```
 
 #### test_get_LRU_Cache_remove_last_recent_used
 - When a key is read, it is considered used and move to most recent
