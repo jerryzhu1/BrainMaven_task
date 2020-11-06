@@ -260,7 +260,7 @@ new keys that cause the capacity to be exceeded, the “least recently used” i
 
     `pytest test_LRU_Cache.py`
     
-- And you mey expect below result that indicate all unit tests passed:
+- And you may expect below result that indicate all unit tests passed:
 
     ```
     ================================================= test session starts =================================================
