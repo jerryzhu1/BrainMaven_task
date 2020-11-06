@@ -7,6 +7,9 @@ This is my answer for BrainMaven's TASK 1
 This is a package for “Least-Recently Used” (LRU) Cache. LRU Cache will have its maximum capacity set at the time of the construction, and when adding
 new keys that cause the capacity to be exceeded, the “least recently used” item will be identified and discarded. Both reading and writing the value of a key are considered the use of that key, and will update the key to "Most-Recent Used".
 
+- ***source code***: LRU_Cache.py
+- ***test code***:   test_LRU_Cache.py
+
 ## Table of content
 
 - [Installation](#installation)
